@@ -1,0 +1,126 @@
+* {
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('Border.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.background-image {
+    background-image: url('Border.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color on the background image */
+    text-align: center;
+}
+
+/* Additional styles for your content */
+.background-image h1 {
+    font-size: 2.5rem;
+}
+
+.background-image p {
+    font-size: 1.5rem;
+}
+
+
+.topnav {
+    /* background-color: #353535; */
+    overflow: hidden;
+    text-align: center; /* Center-align the links */
+    
+}
+
+/* Styles for the logo container */
+.logo-container {
+    text-align: center;
+    max-width: 100%; /* Make sure the logo scales down to fit its container */
+    padding: 20px;
+}
+
+.logo-container img {
+    padding-top: 20px;
+    width: 18%; /* Make the logo responsive by setting its width to 100% */
+    height: auto; /* Ensure the aspect ratio is maintained */
+}
+
+@media screen and (max-width: 600px) {
+    .logo-container {
+        padding: 10px;
+    }
+
+    .logo-container img {
+        width: 60%; /* Reduce the logo's maximum width on smaller screens */
+    }
+}
+
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center-align the content */
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 24px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        padding: 10px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    /* float: left; */
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
