@@ -1,11 +1,6 @@
 * {
     background-color: aliceblue;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('Border.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
 .background-image {
@@ -124,3 +119,61 @@
     display: none;
 }
 
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Style for the left content */
+.content-left {
+    flex: 1;
+    padding: 20px;
+    /* background-color: #f2f2f2; Background color for the left content */
+    text-align: left;
+}
+
+.content-left h2 {
+    font-size: 24px;
+    color: #333; /* Text color for the heading */
+}
+
+.content-left p {
+    font-size: 16px;
+    color: #555; /* Text color for the description */
+    margin-top: 10px;
+}
+
+/* Style for the "Know More" button */
+.know-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* No fill color inside the button */
+    color: #000; /* Text color (black) */
+    text-decoration: none;
+    border: 3px solid #000; /* Black border */
+    border-radius: 50px; /* Cylindrical shape */
+    font-weight: bold; /* Bold text */
+    font-size: 10px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.know-more-button:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* Text color on hover (white) */
+    transform: scale(1.05); /* Slight scale-up for a 3D effect on hover */
+}
+
+/* Style for the right image */
+.content-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
