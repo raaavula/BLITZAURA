@@ -89,6 +89,7 @@
     .about p {
         font-size: 16px;
     }
+
 }
 
 /* Style the links inside the navigation bar */
@@ -134,7 +135,7 @@
 }
 
 .content-left h2 {
-    font-size: 24px;
+    font-size: 40px;
     color: #333; /* Text color for the heading */
 }
 
@@ -169,11 +170,51 @@
 /* Style for the right image */
 .content-right {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
 }
 
 .content-right img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
+    border-radius: 50px;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .content-section {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .content-left,
+    .content-right {
+        padding: 2px;
+        text-align: center;
+    }
+
+    .content-left h2 {
+        font-size: 28px;
+    }
+
+    .content-left p {
+        font-size: 14px;
+    }
+
+    .content-right img {
+        max-width: 80%;
+        height: auto;
+        margin-top: 2px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer {
+    /* background-color: #333; */
+    color: rgb(24, 24, 24);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

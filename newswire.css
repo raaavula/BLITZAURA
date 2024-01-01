@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+.topnav {
+    /* background-color: #353535; */
+    overflow: hidden;
+    text-align: center; /* Center-align the links */
+    padding-top: 10px;
+    
+}
+
+.topnav a {
+    /* float: left; */
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #353535;
+    color: rgb(255, 255, 255);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.newswire {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    background-color: #c6e4dd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Full width on smaller screens */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.post-content {
+    color: #555;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* No fill color inside the button */
+    color: #000; /* Text color (black) */
+    text-decoration: none;
+    border: 3px solid #000; /* Black border */
+    border-radius: 50px; /* Cylindrical shape */
+    font-weight: bold; /* Bold text */
+    font-size: 10px;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* Text color on hover (white) */
+    transform: scale(1.05); /* Slight scale-up for a 3D effect on hover */
+}
+
+footer {
+    /* background-color: #333; */
+    color: rgb(17, 17, 17);
+    text-align: center;
+    /* padding: 10px; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
