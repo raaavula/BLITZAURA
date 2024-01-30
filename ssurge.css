@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Oswald'
+}
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+    background-image: url('SILENT SURGE.jpg'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* 50% opacity black layer */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 1px;
+}
+
+p {
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+
+.home-button {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Button background color */
+    color: #000; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #000; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
